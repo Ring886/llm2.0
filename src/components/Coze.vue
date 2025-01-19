@@ -10,7 +10,7 @@
 
   // 使用个人访问令牌初始化客户端
   const client = new CozeAPI({
-    token: 'pat_SiYKpTTOpUx6zSHFU6amAvgq7fZ6hMa1ujQ46OkawH6w47ZDIPSRkY5jQT7DFvDA', // 从 https://www.coze.cn/open/oauth/pats 获取你的 PAT
+    token: 'your_token', // 从 https://www.coze.cn/open/oauth/pats 获取你的 PAT
     // 或者
     // token: async () => {
     //   // 如果令牌过期则刷新
@@ -23,10 +23,10 @@
   // 简单对话示例
   async function quickChat() {
     const v = await client.chat.createAndPoll({
-      bot_id: '7460744980781482019',
+      bot_id: 'your_bot_id',
       additional_messages: [{
         role: RoleType.User,
-        content: 'Who is Donald Trump?',
+        content: 'Hello!',
         content_type: 'text',
       }],
     });
