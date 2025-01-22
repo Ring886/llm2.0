@@ -22,7 +22,7 @@ def chat():
 def invoke_llm(message):
   # 设置 API URL 和 API 密钥
   url = "https://api2.aigcbest.top/v1/chat/completions"
-  api_key = "API_key"  # 替换为你的实际 API 密钥
+  api_key = "api_key"  # 替换为你的实际 API 密钥
 
   # 设置请求头
   headers = {
